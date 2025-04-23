@@ -1,10 +1,12 @@
 ---
+img: BlogImg/imagem.jpg
 title: "Imposto de renda pessoa física 2025: saiba como e quem deve declarar!"        
-slug: "Imposto de renda PF"
-date: 2023-10-28   
-author: Seu Nome  
+slug: "imposto-de-renda-pessoa-fisica-2025-saiba-como-e-quem-deve-declarar"
+date: 2023-10-28    
 excerpt: "awfwafwfawffawfaw" 
 ---
+
+
 
 
 
@@ -13,18 +15,18 @@ A data de realização do imposto de renda pessoa física 2025 ainda não foi de
 Saber essas datas é importante para garantir que sua declaração do imposto de renda pessoa física 2025 seja realizada dentro do prazo. Além disso, é recomendado enviar a documentação logo no início do prazo.
 
 Isso evita problemas de acesso, que normalmente acontecem nos últimos dias da declaração, e também garante que você receba a restituição logo nos primeiros lotes.
-Quem deve declarar imposto de renda pessoa física 2025?
+
+## Quem deve declarar imposto de renda pessoa física 2025?
 
 O imposto de renda pessoa física 2025 é referente aos ganhos do ano de 2024. Assim você deve realizar a declaração se estiver incluso em uma dessas categorias abaixo:
 
-    Rendimentos superiores a R$30.639,90 ao longo do ano. São considerados salários, alugueis, aposentadoria e qualquer outro ganho.
-    Recebimento acima de R$200.000,00 referentes a rendimentos isentos, como heranças, doações e indenizações.
+- Rendimentos superiores a R$30.639,90 ao longo do ano. São considerados salários, alugueis, aposentadoria e qualquer outro ganho.
+- Recebimento acima de R$200.000,00 referentes a rendimentos isentos, como heranças, doações e indenizações.
     Atividade rural com receita bruta acima de R$153.199,50.
     Ganhos de capital com venda de direitos ou bens.
     Investimentos em bolsa de valores, neste caso existem diversas regras próprias que você deve procurar para conhecer melhor.
 
-<br>
-<h2>Como declarar imposto de renda pessoa física 2025?</h2>
+Como declarar imposto de renda pessoa física 2025?
 
 O primeiro passo para realizar a declaração do imposto de renda pessoa física 2025 é baixar o aplicativo da Receita Federal. Para garantir a segurança do processo, faça o download diretamente do site da Receita Federal.
 

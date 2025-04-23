@@ -14,7 +14,7 @@ import matter from 'gray-matter';
  */
 
 // 
-const postModules = import.meta.glob('../posts/*.md', {
+const postModules = import.meta.glob('../content/posts/*.md', {
   query: '?raw',      
   import: 'default',  
   eager: true         
@@ -34,6 +34,7 @@ export const allPosts = Object.entries(postModules)
       }
 
       return {
+        img: data.img,
         title: data.title,
         date: data.date,
         slug: data.slug,
