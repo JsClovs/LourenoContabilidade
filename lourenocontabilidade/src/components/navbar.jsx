@@ -21,7 +21,7 @@ function NavBar() {
                          <Link to="Blog">Postagens</Link>
                      </p>
                      <p className="hover:text-black hover:bg-amber-200 hover:font-bold hover:px-2 hover:underline ease-in-out duration-300 cursor-pointer">
-                         Contate-nos
+                         <Link to="About">Sobre</Link>
                      </p>
                  </nav>
                  <p className="text-white text-lg hover:bg-amber-200 hover:font-bold hover:px-2 hover:underline duration-300 cursor-pointer">Contatos</p>

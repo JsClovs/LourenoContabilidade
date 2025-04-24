@@ -36,22 +36,29 @@ function BlogPostPage() {
   }
 
   return (
-    <article className="prose prose-img:rounded-xl prose-a:text-blue-600 m-auto">
-      <Link to="/blog">← Voltar</Link>
-      <img src={post.img} alt={post.img} />
-      <h1 className="text-4xl font-extrabold mb-3">{post.title}</h1>
-      <p className="text-md text-gray-500 mb-8 -mt-2">
-        Por {post.author} em{" "}
-        {post.date ? new Date(post.date).toLocaleDateString() : "Data inválida"}
-      </p>
-
-      <ReactMarkdown>{post.content}</ReactMarkdown>
-      <div className=" mt-10 pt-6 border-t">
-        <Link to="/blog" className="text-blue-600 hover:underline">
-          ← Voltar para todos os posts
-        </Link>
-      </div>
-    </article>
+    <div>
+      <article className="prose text-[20px] prose-img:rounded-xl prose-a:text-blue-600 m-auto my-6
+      ">
+        
+      <img
+        src={`/${post.img}`}
+        alt={`Imagem de ${post.img}`}
+        className="w-full h-48 object-cover mb-2"
+      />
+      <Link className="" to="/blog">← Voltar</Link>
+        <h1 className="text-4xl font-extrabold mb-3">{post.title}</h1>
+        <p className="text-md text-gray-500 mb-8 -mt-2">
+          Por {post.author} em{" "}
+          {post.date ? new Date(post.date).toLocaleDateString() : "Data inválida"}
+        </p>
+        <ReactMarkdown>{post.content}</ReactMarkdown>
+        <div className=" mt-10 pt-6 border-t">
+          <Link to="/blog" className="text-blue-600 hover:underline">
+            ← Voltar para todos os posts
+          </Link>
+        </div>
+      </article>
+    </div>
     
   );
 }

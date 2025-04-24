@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { allPosts } from "../libs/posts.js"; // Verifique se a exportação está correta
+import { allPosts } from "../libs/posts.js"; 
 import { Link } from "react-router-dom";
 
 function Blog() {
@@ -20,31 +20,35 @@ function Blog() {
 
   return (
     <div>
-      <h1>Meu Blog</h1>
       <input
         type="search"
-        placeholder="Pesquisar"
-        className="w-90 px-4 mx-auto py-2 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 my-4" 
+        placeholder="Pesquisar por blogs"
+        className="w-90 px-4 block py-2 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 my-4 mx-auto" 
         value={searchTerm}
         onChange={(e) => {
           setSearchTerm(e.target.value);
           setVisibleCount(10);
         }}
       />
-      <ul className="flex flex-wrap gap-4 justify-center"> 
+      <ul className="flex flex-wrap  gap-4 justify-center"> 
         {visiblePosts.map((post) => (
-          <li key={post.slug || post.id} className="mb-6 w-full sm:w-1/3 md:w-1/4 border p-4 rounded shadow"> 
+          <li key={post.slug || post.id} className="mb-6 w-90 h-130 p-4"> 
             {post.img ? ( 
-              <img
-                src={post.img} 
-                alt={`Imagem de ${post.title + (post.img) || 'Post'}`} 
-                className="w-full h-48 object-cover mb-2" 
-              />
+              <Link to={`/blog/posts/${post.slug}`}>
+                <img
+                  src={post.img}
+                  alt={`Imagem de ${post.title + (post.img) || 'Post'}`}
+                  className="w-full h-48 object-cover mb-2"
+                />
+              </Link>
             ) : (
               <div className="w-full h-48 bg-gray-200 mb-2 flex items-center justify-center text-gray-500">Sem Imagem</div> // Placeholder
             )}
 
-            <h2 className="text-xl font-semibold mb-1">{post.title || "Título Indisponível"}</h2>
+            <Link to={`/blog/posts/${post.slug}`}>
+              <h2 className="text-xl font-semibold mb-1 hover:text-blue-500 transition  ease-in-out">{post.title || "Título Indisponível"}</h2>
+            </Link>
+
             <p className="text-sm text-gray-500 mb-2">
               Data:{" "}
               {post.date
